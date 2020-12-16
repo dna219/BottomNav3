@@ -6,21 +6,25 @@
     font-size: 14px;
   }
 }
+
 @media screen and (min-width: 480px) {
   html {
     font-size: 20px;
   }
 }
+
 @media screen and (min-width: 768px) {
   html {
     font-size: 24px;
   }
 }
+
 @media screen and (min-width: 1024px) {
   html {
     font-size: 32px;
   }
 }
+
 @media screen and (min-width: 1440px) {
   html {
     font-size: 36px;
@@ -30,27 +34,31 @@
 body {
   height: 100vh;
 }
+
 section {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
+
 header {
   width: 100%;
   height: 2.5rem;
   background: url(../../assets/icon/1.png) center no-repeat;
   background-size: 4rem;
-}
-menu {
-  padding: 0 1.5rem;
-}
-.item {
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 1rem;
-  cursor: pointer;
-  font-family: "Amatic SC", cursive;
+
+  menu {
+    padding: 0 1.5rem;
+  }
+
+  .item {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem;
+    cursor: pointer;
+    font-family: "Amatic SC", cursive;
+  }
 }
 
 .prehead {
@@ -63,9 +71,11 @@ menu {
     width: 5rem;
     height: 5rem;
     font-size: 0.75rem;
+
     .lan {
       background: url(../../assets/image/lan.jpg) center no-repeat;
       background-size: 150%;
+
       &::after {
         content: "Lăn";
         position: absolute;
@@ -73,9 +83,11 @@ menu {
         left: 1.75rem;
       }
     }
+
     .dunzz {
       background: url(../../assets/image/dunzz.jpg) 0 no-repeat;
       background-size: 120%;
+
       &::after {
         content: "Dunzz";
         position: absolute;
@@ -84,6 +96,7 @@ menu {
       }
     }
   }
+
   .love {
     width: 90px;
     height: 50px;
@@ -106,11 +119,13 @@ menu {
     justify-content: center;
     background-size: contain;
   }
+
   .bg-day {
     background: url(../../assets/icon/6.png) center no-repeat;
     font-size: 1.25em;
     padding: 2rem;
   }
+
   .bg-time {
     background: url(../../assets/icon/5.png) center no-repeat;
     font-size: 1em;
@@ -122,6 +137,7 @@ menu {
   display: flex;
   flex-direction: row;
   padding: 0.2rem;
+
   img {
     margin: 4px;
     width: 100%;

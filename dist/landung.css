@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+.height100 {
+  height: 100%;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -98,12 +102,10 @@ header {
   background: url(../../assets/icon/1.png) center no-repeat;
   background-size: 4rem;
 }
-
-menu {
+header menu {
   padding: 0 1.5rem;
 }
-
-.item {
+header .item {
   font-size: 1rem;
   font-weight: 700;
   padding: 1rem;
