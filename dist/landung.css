@@ -8,6 +8,11 @@
   height: 100%;
 }
 
+.overflow-horizontal {
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -60,6 +65,15 @@
   flex-grow: 1;
 }
 
+.font-amatic, .countdate .bg-day,
+.countdate .bg-time, header .item {
+  font-family: "Amatic SC", cursive;
+}
+
+.font-pacifico, .title-area, .prehead {
+  font-family: "Pacifico", cursive;
+}
+
 @media screen and (min-width: 320px) {
   html {
     font-size: 14px;
@@ -110,12 +124,10 @@ header .item {
   font-weight: 700;
   padding: 1rem;
   cursor: pointer;
-  font-family: "Amatic SC", cursive;
 }
 
 .prehead {
   height: 50%;
-  font-family: Pacifico, cursive;
 }
 .prehead .bg {
   border: 1px solid #a9bab0;
@@ -160,7 +172,6 @@ header .item {
 }
 .countdate .bg-day,
 .countdate .bg-time {
-  font-family: "Amatic SC", cursive;
   align-items: center;
   justify-content: center;
   background-size: contain;
@@ -176,19 +187,24 @@ header .item {
   padding: 1.5rem;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  padding: 0.2rem;
-}
-.row img {
-  margin: 4px;
-  width: 100%;
-  height: 50%;
-  object-fit: cover;
+.title-area {
+  text-align: center;
+  margin: 32px 0;
+  font-size: 1.5rem;
 }
 
-#second {
-  overflow-y: hidden;
-  overflow-x: scroll;
+.image-area {
+  flex-grow: 1;
+}
+.image-area .row {
+  display: flex;
+  flex-direction: row;
+  height: calc(100% / 3);
+  padding: 0.2rem;
+}
+.image-area .row img {
+  margin: 4px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

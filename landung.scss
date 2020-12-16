@@ -1,5 +1,6 @@
 @import "./scss/common.scss";
 @import "./scss/flex.scss";
+@import "./scss/font.scss";
 
 @media screen and (min-width: 320px) {
   html {
@@ -57,13 +58,13 @@ header {
     font-weight: 700;
     padding: 1rem;
     cursor: pointer;
-    font-family: "Amatic SC", cursive;
+    @extend.font-amatic;
   }
 }
 
 .prehead {
   height: 50%;
-  font-family: Pacifico, cursive;
+  @extend.font-pacifico;
 
   .bg {
     border: 1px solid #a9bab0;
@@ -114,7 +115,7 @@ header {
 
   .bg-day,
   .bg-time {
-    font-family: "Amatic SC", cursive;
+    @extend.font-amatic;
     align-items: center;
     justify-content: center;
     background-size: contain;
@@ -133,20 +134,28 @@ header {
   }
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  padding: 0.2rem;
-
-  img {
-    margin: 4px;
-    width: 100%;
-    height: 50%;
-    object-fit: cover;
-  }
+.title-area {
+  @extend.font-pacifico;
+  text-align: center;
+  margin: 32px 0;
+  font-size: 1.5rem;
 }
 
-#second {
-  overflow-y: hidden;
-  overflow-x: scroll;
+.image-area {
+  flex-grow: 1;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    height: calc(100% / 3);
+    padding: 0.2rem;
+
+    img {
+      margin: 4px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
 }
