@@ -124,21 +124,21 @@ header .item {
   height: 5rem;
   font-size: 0.75rem;
 }
-.prehead .bg .lan {
+.prehead .bg.lan {
   background: url(../../assets/image/lan.jpg) center no-repeat;
   background-size: 150%;
 }
-.prehead .bg .lan::after {
+.prehead .bg.lan::after {
   content: "Lăn";
   position: absolute;
   top: 5.5rem;
   left: 1.75rem;
 }
-.prehead .bg .dunzz {
+.prehead .bg.dunzz {
   background: url(../../assets/image/dunzz.jpg) 0 no-repeat;
   background-size: 120%;
 }
-.prehead .bg .dunzz::after {
+.prehead .bg.dunzz::after {
   content: "Dunzz";
   position: absolute;
   top: 5.5rem;
