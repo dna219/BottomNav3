@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Niconne&family=Pacifico&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -70,6 +71,10 @@
 .font-amatic, .countdate .bg-day,
 .countdate .bg-time, header .item {
   font-family: "Amatic SC", cursive;
+}
+
+.font-niconne {
+  font-family: "Niconne", cursive;
 }
 
 .font-pacifico, .title-area, .prehead {
