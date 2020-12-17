@@ -33,7 +33,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 100%;
 }
 
 section {
@@ -45,7 +45,7 @@ section {
 }
 
 .mat-menu {
-  height: 3rem;
+  height: 2.5rem;
 }
 
 header {
@@ -58,12 +58,12 @@ header {
 
   menu {
     padding: 0 1.5rem;
+    height: 100%;
   }
 
   .item {
     font-size: 1rem;
     font-weight: 700;
-    padding: 0.5rem;
     cursor: pointer;
     @extend.font-amatic;
   }
@@ -148,7 +148,7 @@ header {
 .title-area {
   @extend.font-pacifico;
   text-align: center;
-  margin: 0.8rem 0;
+  margin: 0.4rem 0;
   font-size: 1.2rem;
 }
 
@@ -156,9 +156,9 @@ header {
   flex-grow: 1;
 
   .row {
-    height: 30%;
+    height: 28vh;
     padding: 8px 0;
-    flex-grow: 1;
+    // flex-grow: 1;
 
     img {
       margin: 0 8px;
