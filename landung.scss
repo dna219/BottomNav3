@@ -52,6 +52,7 @@ header {
   height: 2.5rem;
   background: url(../../assets/icon/1.png) center no-repeat;
   background-size: 4rem;
+
   menu {
     padding: 0 1.5rem;
   }
@@ -137,24 +138,27 @@ header {
   }
 }
 
+.wrapper {
+  padding: 4px 16px;
+}
+
 .title-area {
   @extend.font-pacifico;
   text-align: center;
-  margin: 32px 0;
-  font-size: 1.5rem;
+  margin: 0.8rem 0;
+  font-size: 1.2rem;
 }
 
 .image-area {
   flex-grow: 1;
 
   .row {
-    display: flex;
-    flex-direction: row;
-    height: calc(100% / 3);
-    padding: 0.2rem;
+    height: 30%;
+    padding: 8px 0;
+    flex-grow: 1;
 
     img {
-      margin: 4px;
+      margin: 0 8px;
       width: 100%;
       height: 100%;
       object-fit: cover;
